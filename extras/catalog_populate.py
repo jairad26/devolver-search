@@ -36,7 +36,7 @@ def post_mutation_to_runtime(ids, names, categories, selling_prices, description
 
 
     query = gql(f'''
-                query UpsertProducts {{
+                mutation UpsertProducts {{
                     upsertProducts(ids: {ids_json}, names: {names_json}, categories: {categories_json}, prices: {selling_prices_json}, descriptions: {descriptions_json}, images: {images_json}, stars: {stars_json}, isStockedArray: {in_stock_json})
                 }}
             ''')
