@@ -1,7 +1,7 @@
 import { collections } from "@hypermode/modus-sdk-as";
 import { Product, consts, UserProductHistory } from "./types";
 
-export function upsertProduct(
+export function putProduct(
   id: string,
   name: string,
   category: string,
@@ -58,7 +58,7 @@ export function upsertProduct(
   return id;
 }
 
-export function upsertProducts(
+export function putProducts(
   ids: string[],
   names: string[],
   categories: string[],
