@@ -6,5 +6,35 @@
       "path": "/graphql",
       "auth": "bearer-token"
     }
+  },
+  "collections": {
+    "productNames": {
+      "searchMethods": {}
+    },
+    "productDescriptions": {
+      "searchMethods": {
+        "searchMethod1": {
+          "embedder": "miniLMEmbed",
+          "index": {
+            "type": "sequential"
+          }
+        }
+      }
+    },
+    "productCategories": {
+      "searchMethods": {}
+    },
+    "productPrices": {
+      "searchMethods": {}
+    },
+    "productImages": {
+      "searchMethods": {}
+    },
+    "productStars": {
+      "searchMethods": {}
+    },
+    "isProductStocked": {
+      "searchMethods": {}
+    }
   }
 }
