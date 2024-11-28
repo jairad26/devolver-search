@@ -13,12 +13,6 @@
       "sourceModel": "sentence-transformers/all-MiniLM-L6-v2",
       "provider": "hugging-face",
       "connection": "hypermode"
-    },
-    // This defines a model hosted on OpenAI that can be used for vector embeddings.
-    "openai-embeddings": {
-      "sourceModel": "text-embedding-3-large",
-      "connection": "openai",
-      "path": "v1/embeddings"
     }
   },
   "collections": {
