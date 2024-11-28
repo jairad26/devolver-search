@@ -25,10 +25,12 @@ export function recommendProductByUserHistory(
   }
 
   const sumVec: f32[] = [];
+  for (let i = 0; i < historyVectors[0].length; i++) {
+    sumVec[i] = 0.0;
     for (let j = 0; j < historyVectors.length; j++) {
-        vectors.addInPlace(sumVec, historyVectors[j]);
+      sumVec[i] += historyVectors[j][i];
     }
-  
+  }
 
   const normalizedVec = normalize(sumVec);
 
